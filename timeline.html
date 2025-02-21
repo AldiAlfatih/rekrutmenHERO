@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Timeline Perekrutan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #000000;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 50px 0;
+        }
+        h1 {
+            color: #d5271d;
+            font-size: 36px;
+            font-weight: 800;
+            text-align: center;
+        }
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+        .timeline-item {
+            background: #6e0d06;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+            color: azure;
+        }
+        .timeline-item:hover {
+            transform: scale(1.05);
+            background: #a8130c;
+        }
+        .timeline-item h3 {
+            margin: 0;
+            font-size: 24px;
+            color: azure;
+        }
+        .timeline-item p {
+            margin: 5px 0 0;
+            font-size: 18px;
+        }
+    </style>
+    <link rel="stylesheet" href="pagestyle.css">
+</head>
+
+<body>
+
+    <audio id="background-audio" autoplay loop>
+        <source src="/music/op1.mp3" type="audio/mpeg">
+    </audio>
+<div class="landingpage">
+    <div class="navbar">
+        <!-- <a class="navlogo">
+            <img src="/img/logohero.png" alt="Logo" class="logo">
+            HABIBIE ENGINEERING ROBOTIC OF ORGANIZATION
+        </a> -->
+        <a class="navlogo">
+            <img src="/img/logohero.png" alt="Logo" class="logo">
+            <div class="navtext">
+                <span>HABIBIE ENGINEERING</span>
+                <span>ROBOTIC OF</span>
+                <span>ORGANIZATION</span>
+            </div>
+        </a>
+            <button class="hamburger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                    <path d="M3 12h18M3 6h18M3 18h18" />
+                </svg>
+            </button>
+            <div class="navlinkwrap">
+                <a href="index.html" class="navlink">Beranda</a>
+                <a href="timeline.html" class="navlink selectedlink">Timeline</a>
+                <a href="persyaratan.html" class="navlink">Persyaratan</a>
+                <!-- <a href="#Kontak" class="navlink">Kontak</a> -->
+                <!-- <a href="#" class="navlink">Tentang HERO</a> -->
+            </div>
+            
+        </div>
+        <div class="container">
+            <h1>TIMELINE PEREKRUTAN ANGKATAN 3</h1>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>24 Feb - 24 Maret</h3>
+                    <p>Pengisian Form Pendaftaran</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>25 - 27 Maret</h3>
+                    <p>Seleksi Administrasi</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>28 Maret</h3>
+                    <p>Pengumuman Kelulusan Seleksi Administrasi</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>29 Maret - 17 April</h3>
+                    <p>Pengambilan dan Pengembalian Formulir Pendaftaran Ulang</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>19 April</h3>
+                    <p>Seleksi Wawancara</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>21 April</h3>
+                    <p>Pengumuman Kelulusan Seleksi Wawancara</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer2">
+            <div></div>
+            <p>Created by:<a href="">Divisi Riset dan Pengembangan HERO</a></p>
+            <p>&copy;Copyright 2025</p>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburger = document.querySelector('.hamburger');
+            const navlinkwrap = document.querySelector('.navlinkwrap');
+
+            hamburger.addEventListener('click', function () {
+                navlinkwrap.classList.toggle('active');
+            });
+        });
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener("click", function(event) {
+                event.preventDefault();
+                const targetId = this.getAttribute("href").substring(1);
+                const targetElement = document.getElementById(targetId);
+        
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 50,
+                        behavior: "smooth"
+                    });
+                }
+            });
+        });
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener("click", function(event) {
+                event.preventDefault();
+                const targetId = this.getAttribute("href").substring(1);
+                const targetElement = document.getElementById(targetId);
+        
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: "smooth"
+                    });
+                }
+            });
+        });
+        
+        const audio = document.getElementById('background-audio');
+        document.body.addEventListener('click', function () {
+            if (audio.paused) {
+                audio.play();
+            }
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            const video = document.querySelector(".display-video");
+
+            video.play();
+                   
+            video.addEventListener("ended", function () {
+                video.pause();
+            });
+        
+            video.addEventListener("click", function () {
+                if (video.paused) {
+                    video.currentTime = 0;
+                    video.play();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
