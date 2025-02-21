@@ -40,10 +40,17 @@
                 </div>
             </a>
             <button class="hamburger">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" 
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
                     <path d="M3 12h18M3 6h18M3 18h18" />
                 </svg>
             </button>
+            <div class="nav-menu">
+                <a href="index.html" class="navlink ">Beranda</a>
+                <a href="timeline.html" class="navlink">Timeline</a>
+                <a href="persyaratan.html" class="navlink selectedlink">Persyaratan</a>
+                <!-- <a href="#Kontak" class="navlink">Kontak</a> -->
+            </div>
             <div class="navlinkwrap">
                 <a href="index.html" class="navlink">Beranda</a>
                 <a href="timeline.html" class="navlink">Timeline</a>
@@ -76,5 +83,34 @@
         </div>
     </div>
 </body>
-
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu'); // Pastikan menargetkan nav-menu
+        const body = document.body;
+    
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', function (event) {
+                event.stopPropagation();
+                body.classList.toggle('menu-open'); // Tambah class ke body agar CSS bekerja
+            });
+    
+            // Tutup menu saat klik di luar
+            document.addEventListener('click', function (event) {
+                if (!hamburger.contains(event.target) && !navMenu.contains(event.target)) {
+                    body.classList.remove('menu-open');
+                }
+            });
+    
+            // Tutup menu saat klik link navigasi
+            document.querySelectorAll('.nav-menu a').forEach(link => {
+                link.addEventListener('click', function () {
+                    body.classList.remove('menu-open');
+                });
+            });
+        } else {
+            console.error('Hamburger menu atau nav-menu tidak ditemukan!');
+        }
+    });
+</script>
 </html>

@@ -299,144 +299,7 @@ audio {
   .box .display .info2 .iconwrapper svg {
     margin-right: 5px;
   }
-  
-  .auction .title {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 50px;
-  }
-  .auction .title .titlebold {
-    margin: 0;
-    font-family: "Poppins";
-    font-style: normal;
-    color: #FFFFFF;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 72px;
-  }
-  .auction .title .titleslim {
-    margin: 0;
-    font-family: "Poppins";
-    font-style: normal;
-    color: #D7D7D7;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 36px;
-    letter-spacing: -1px;
-  }
-  .auction .nft {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-row-gap: 20px;
-    grid-column-gap: 20px;
-    justify-content: space-between;
-  }
-  
-  .started {
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-  }
-  .started-boldtext {
-    margin: 0;
-    align-self: center;
-    font-family: "Poppins";
-    font-style: normal;
-    color: #FFFFFF;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 72px;
-  }
-  .started-slimtext {
-    margin: 0;
-    align-self: center;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 36px;
-    letter-spacing: 0.5px;
-    color: #E2E2E2;
-  }
-  .started-items {
-    padding: 60px 80px;
-    position: relative;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    justify-content: space-between;
-  }
-  .started-items:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    top: 80px;
-    filter: blur(80px);
-    background: linear-gradient(93.51deg, #d5271d 2.84%, #6e0d06 99.18%);
-  }
-  .started-items .itemwrapper p {
-    width: 100px;
-    margin: 0;
-    margin-top: 10px;
-    text-align: center;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    color: #FFFFFF;
-  }
-  .started-items-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    height: 100px;
-    border-radius: 18px;
-    background-color: red;
-    background: rgba(255, 255, 255, 0.095);
-    box-shadow: inset 2.01px -2.01px 20px rgba(214, 214, 214, 0.17), inset -3.01333px 3.01333px 3.01333px rgba(255, 255, 255, 0.39);
-    backdrop-filter: blur(74.4293px);
-  }
-  
-  .discover-title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .discover-title p {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
-    letter-spacing: -1px;
-    color: #FFFFFF;
-  }
-  .discover-items {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-row-gap: 20px;
-    grid-column-gap: 20px;
-    justify-content: space-between;
-  }
-  .discover-loadbtn {
-    cursor: pointer;
-    margin-top: 20px;
-    align-self: center;
-    width: 161px;
-    height: 40px;
-    border: 1px solid #D7D7D7;
-    border-radius: 10px;
-    background-color: transparent;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    letter-spacing: 1.5px;
-    color: #BCBCBC;
-  }
+ 
   .display-video {
     width: 100%;
     height: auto;
@@ -507,84 +370,12 @@ audio {
     color: #828282;
   }
   
-  .item {
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-  }
-  .item-img {
-    object-fit: cover;
-    flex-shrink: 0;
-    width: 200px;
-    height: 220px;
-    border-radius: 10px;
-    transition: 0.3s;
-    cursor: pointer;
-  }
-  .item-img:hover {
-    transform: scale(1.05);
-  }
-  .item-title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid white;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 24px;
-    color: #FFFFFF;
-  }
-  .item-date {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 24px;
-    color: #BCBCBC;
-  }
-  
-  .filters {
-    display: flex;
-    align-items: center;
-  }
-  .filters .filter {
-    display: flex;
-    align-items: center;
-    margin-right: 30px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    color: #FFFFFF;
-  }
-  .filters .filter svg {
-    margin-right: 5px;
-    margin-left: 5px;
-  }
-  .filters .filterbtn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    height: 30px;
-    background: linear-gradient(93.51deg, #d5271d 2.84%, #6e0d06 99.18%);
-    border: none;
-    border-radius: 10px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    color: #FFFFFF;
-  }
-  .filters .filterbtn svg {
-    margin-right: 5px;
-  }
-  
   @media screen and (max-width: 1500px) {
     .landingpage {
       max-width: 1200px;
+    }
+    .navlinkwrap.active {
+        display: flex; /* Tampilkan saat tombol ditekan */
     }
   }
   @media screen and (max-width: 1040px) {
@@ -623,11 +414,11 @@ audio {
     .footer-navigate .nav:first-child {
       margin: 0;
     }
+    .navlinkwrap.active {
+        display: flex; /* Tampilkan saat tombol ditekan */
+    }
   }
-  /* Active state: show the menu */
-.navlinkwrap.active {
-  display: flex;
-}
+
   @media screen and (max-width: 925px) {
     .navlinkwrap {
       display: none;
@@ -644,6 +435,9 @@ audio {
   
     .started-slimtext {
       text-align: center;
+    }
+    .navlinkwrap.active {
+        display: flex; /* Tampilkan saat tombol ditekan */
     }
   }
   @media screen and (max-width: 825px) {
@@ -662,6 +456,9 @@ audio {
     .discover-items {
       grid-template-columns: auto auto;
       justify-content: space-around;
+    }
+    .navlinkwrap.active {
+        display: flex; /* Tampilkan saat tombol ditekan */
     }
   }
   @media screen and (max-width: 700px) {
@@ -691,6 +488,9 @@ audio {
     }
     .auction .title .titleslim {
       display: none;
+    }
+    .navlinkwrap.active {
+        display: flex; /* Tampilkan saat tombol ditekan */
     }
   }
   @media screen and (max-width: 600px) {
@@ -740,6 +540,9 @@ audio {
       font-size: 10px;
       line-height: 18px;
     }
+    .navlinkwrap.active {
+        display: flex; /* Tampilkan saat tombol ditekan */
+    }
   }
   @media screen and (max-width: 480px) {
     .landingpage .box .infobox-boldtext {
@@ -753,6 +556,9 @@ audio {
     .landingpage .box .infobox-btnwrapper {
       justify-content: center;
     }
+    .navlinkwrap.active {
+        display: flex; /* Tampilkan saat tombol ditekan */
+    }
   }
   @keyframes leftslide {
     from {
@@ -761,6 +567,7 @@ audio {
     to {
       transform: translateX(0px);
     }
+    
   }
   @keyframes rightslide {
     from {
@@ -771,81 +578,94 @@ audio {
     }
   }
 
-  /* Tambahkan gaya untuk hamburger menu */
+/* Tambahkan gaya untuk hamburger menu */
 .hamburger-menu {
-  display: none; /* Default: tidak terlihat di desktop */
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  position: relative;
-  z-index: 1000;
+    display: none; /* Default: tidak terlihat di desktop */
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    z-index: 1001; /* Pastikan di atas elemen lain */
 }
 
 .hamburger-menu div {
-  width: 100%;
-  height: 4px;
-  background-color: #fff;
-  position: absolute;
-  left: 0;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .hamburger-menu div:nth-child(1) {
-  top: 8px;
+    top: 8px;
 }
 
 .hamburger-menu div:nth-child(2) {
-  top: 18px;
+    top: 18px;
 }
 
 .hamburger-menu div:nth-child(3) {
-  top: 28px;
+    top: 28px;
 }
 
 /* Animasi ketika menu terbuka */
 .menu-open .hamburger-menu div:nth-child(1) {
-  transform: translateY(10px) rotate(45deg);
+    transform: translateY(10px) rotate(45deg);
 }
 .menu-open .hamburger-menu div:nth-child(2) {
-  opacity: 0;
+    opacity: 0;
 }
 .menu-open .hamburger-menu div:nth-child(3) {
-  transform: translateY(-10px) rotate(-45deg);
+    transform: translateY(-10px) rotate(-45deg);
 }
 
 /* Menu navigasi */
+/* Default: menu tersembunyi */
+/* Default: menu tersembunyi */
 .nav-menu {
-  position: fixed;
-  top: 0;
-  right: -100%;
-  width: 250px;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.9);
-  transition: right 0.3s ease-in-out;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    transition: right 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    z-index: 999;
 }
 
+/* Tampilkan menu saat hamburger ditekan */
+body.menu-open .nav-menu {
+    right: 0;
+}
+  
+
 .menu-open .nav-menu {
-  right: 0;
+    right: 0;
 }
 
 .nav-menu a {
-  color: white;
-  text-decoration: none;
-  margin: 15px 0;
-  font-size: 18px;
-  transition: color 0.3s;
+    color: white;
+    text-decoration: none;
+    margin: 15px 0;
+    font-size: 18px;
+    transition: color 0.3s;
 }
 
 .nav-menu a:hover {
-  color: #f0a500;
+    color: #f0a500;
 }
 
 /* Sembunyikan hamburger menu di desktop */
 @media (max-width: 768px) {
-  .hamburger-menu {
-      display: block;
-  }
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav-menu {
+        right: -100%;
+    }
 }
